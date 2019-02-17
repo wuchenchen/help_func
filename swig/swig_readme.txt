@@ -14,3 +14,21 @@ to get the full set of recommended compilation flags:
 4. gcc -bundle -undefined dynamic_lookup -L/Users/myuser/anaconda3/lib example.o example_wrap.o -o _example.so
 
 5. python test.py
+
+
+或者采用setup.py 脚本，由distutils 来决定compiling and linking options。
+
+#################################################
+# setup.py
+
+from distutils.core import setup, Extension
+
+example_module = Extension('_example', sources=['example.c', 'example.i'])
+setup(name='example', ext_modules=[example_module], py_modules=["example"])
+
+#################################################
+
+执行：
+$ swig -python example.i
+$ python setup.py build_ext --inplace
+

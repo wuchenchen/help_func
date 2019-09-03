@@ -1,12 +1,16 @@
-小米A1手机root：
+小米A1手机root:(20190828 add, oneplus 5 root 也是一样的流程，注意先升级android
+studio sdk）
+
+root 会wipe清除手机上所有的数据，要在装程序，存资料之前做。
 
 1.下载magisk manager 和 magisk flashable zip
-    https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445
-
+    https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 
 放到手机sd/data里去。
 
 2.Download mohancm twrp recovery (recovery-3.2.1-2-oreo)
     https://forum.xda-developers.com/mi-a1/development/recovery-twrp-3-1-1-0-touch-recovery-t3688472
+
+https://dl.twrp.me/cheeseburger/  （oneplus 5 对应的是cheeseburger）
 放到fastboot文件夹里去，或者在电脑上cd到该位置
 
 3.在手机设置里，开发者模式，开启OEM unlocking
